@@ -47,7 +47,7 @@ h6 {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: inherit;
 }
 
 li,
@@ -136,14 +136,14 @@ img {
   cursor: pointer;
 }
 
-.logo h1 {
+.logo h2 {
   font-size: 3rem;
   font-weight: 700;
   color: var(--white);
   font-style: italic;
 }
 
-.logo h1 span {
+.logo h2 span {
   color: var(--yellow);
 }
 
@@ -242,6 +242,8 @@ img {
   line-height: 1.2;
   font-weight: 800;
   color: var(--white);
+  animation: typing 5s steps(22) 1s infinite alternate;
+  overflow: hidden;
 }
 
 .hero h1 span {
@@ -299,23 +301,31 @@ img {
   }
 
   .hero h1 {
-    font-size: 6rem;
+    font-size: 9rem;
   }
 
   .hero p {
     width: 80%;
+    font-size: 3rem;
+  }
+  .hero .btn-group .btn {
+    font-size: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .hero h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
 @media only screen and (max-width: 567px) {
   .hero p {
     width: 100%;
+    font-size: 2rem;
+  }
+  .hero .btn-group .btn {
+    font-size: 1.5rem;
   }
 
   .hero .btn-group .btn:first-child {
@@ -363,12 +373,15 @@ img {
 }
 
 .about p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .about p.top {
   margin-top: 2rem;
   text-align: left;
+}
+.about span {
+  color: var(--primary);
 }
 
 .count {
