@@ -61,13 +61,13 @@
                   <a href="#skills" class="nav-link scroll-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#portfolio" class="nav-link scroll-link">Works</a>
+                  <a href="#portfolio" class="nav-link scroll-link">Projects</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a href="#testimonial" class="nav-link scroll-link">Testimonial</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
-                  <a href="#blog" class="nav-link scroll-link">Blog </a>
+                  <a href="#gallery" class="nav-link scroll-link">gallery </a>
                 </li>
                 <li class="nav-item">
                   <a href="#contact" class="nav-link scroll-link">Contact </a>
@@ -80,39 +80,42 @@
 
       <!-- Hero -->
       <div class="hero container">
+        
         <h1>Hi, i'm <span><br />Onuoha Oluebube</span></h1>
       
         <p>
          A frontend developer, i build eye catching user interface using modern web technologies with focus on accessibility and responsiveness.
         </p>
         <div class="btn-group">
-          <a href="" class="btn btn1">VIEW RESUME</a>
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn1">VIEW RESUME</a>
           <a href="#contact" class="btn btn2">CONTACT ME</a>
         </div>
       </div>
     </header>
 
     <!-- About Section -->
-    <section class="section about" id="about">
+    <section class="section about" id="about" 
+   
+    >
       <div class="about-center container">
         <div class="left" data-aos="fade-right" data-aos-duration="2000">
           <div class="subtitle">Welcome to My World!</div>
           <h2 class="title">About Ebube</h2>
           <p>
-        I am a school taught Electrical and Electronic Engineer who have over the the years developed interest in web development. I build responsive and accessible websites using modern from end technologies.
+            
+            I am a self-taught frontend developer who loves to build aesthetically pleasing websites using modern web technologies. 
+            I ensure my work is accessible to everyone and useable on all screen sizes.
+            I am exploring the field of cloud computing and the various technologies offered by it, i ensure to put my work in the cloud.
+        
           </p>
           <p class="top">
-            Outside coding, i spend quality time reading health related books. </br> <span>I also enjoy cooking alot</span>
+            Outside coding, i spend quality time reading health related books. </br><span>I also enjoy cooking alot</span> 
 
-          </p>
-        
-
-        
-        
+          </p> 
         </div>
 
         <div class="right" data-aos="fade-left" data-aos-duration="2000">
-          <img src="./images/profile1.jpg" alt="" />
+          <img src="./images/profile.jpg" alt="Profile Picture" />
          </div>
       </div>
     </section>
@@ -128,67 +131,57 @@
           </p>
         </div>
 
-        <div class="glide" id="glide1">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
+      
+                <div class="skillscontainer">
+                  <div class="skill">
+                    <span><i class="fab fa-js"></i></span>
+                    <h3>JavaScript</h3>
+                    <p> I love making pages come alive. </p>
+                  </div>
+                  <div class="skill">
+                    <span><i class="fab fa-react"></i></span>
+                    <h3>React</h3>
+                    <p>I build component based single page applications. </p>
+                  </div>
                 <div class="skill">
                   <span><i class="fas fa-code"></i></span>
                   <h3>HTML</h3>
                   <p>I build accesible websites</p>
                 </div>
-              </li>
-              
-              <li class="glide__slide">
+             
                 <div class="skill">
                   <span><i class="fab fa-css3-alt"></i> </span>
                   <h3>CSS</h3>
-                  <p>I design beautiful and reponsive websites that work on all screen size</p>
+                  <p>I design beautiful and reponsive websites</p>
                 </div>
-              </li>
-              <li class="glide__slide">
+             
                 <div class="skill">
-                  <span><i class="fab fa-js"></i></span>
-                  <h3>JavaScript</h3>
-                  <p>Websites don't have to be static, I love making pages come to life.</p>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="skill">
-                  <span><i class="fas fa-cloud"></i><i class="fas fa-cloud"></i></span>
+                  <span><i class="fas fa-cloud"></i></span>
                   <h3>Cloud Computing</h3>
-                  <p>I put my works on the cloud </p>
+                  <p>My works are in the cloud </p>
                 </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Arrows -->
-          <div class="glide__bullets" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="<<"></button>
-            <button class="glide__bullet" data-glide-dir=">>"></button>
-          </div>
-        </div>
-      </div>
+              </div>
+      
     </section>
 
     <!-- portfolio -->
     <section class="section portfolio" id="portfolio">
       <div class="portfolio-center container">
         <div class="top">
-          <div class="subtitle">Works completed</div>
-          <h2 class="title">My Works</h2>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+          <div class="subtitle">Completed Projects</div>
+          <h2 class="title">My Projects</h2>
+          <p>Here are some of my recent projects. Built with JavaScript, React, CSS and HTML and are all hosted in the cloud.</p>
         </div>
 
         <div class="portfolio-container">
           <div class="single" data-aos="fade-down" data-aos-duration="2000">
-            <img src="./images/work1.jpg" alt="" />
+            <img  src="./images/foody.JPG" alt="Foody Project Snapshot" />
             <div class="overlay">
               <div class="details">
-                <h3>Custom website build from scratch using wordpress</h3>
+                <h3>Foody is an e-commerce website, it took my weeks to complete because i  worked on it alone. </h3>
+                
                 <div class="btn-group">
-                  <a href=""><i class="fas fa-plus"></i></a>
+                
                   <a href=""><i class="fas fa-link"></i></a>
                 </div>
               </div>
@@ -196,212 +189,195 @@
           </div>
 
           <div class="single" data-aos="fade-right" data-aos-duration="2000">
-            <img src="./images/work2.jpg" alt="" />
+            <img src="./images/portfolio.JPG" alt="Portfolio website Snapshot" />
             <div class="overlay">
               <div class="details">
-                <h3>Custom website build from scratch</h3>
+                <h3>My personal portfolio website, showing my work and you can contact me for works via the contact section below.</h3>
                 <div class="btn-group">
-                  <a href=""><i class="fas fa-plus"></i></a>
+                  <!-- <a href=""><i class="fas fa-plus"></i></a> -->
                   <a href=""><i class="fas fa-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="single" data-aos="fade-left" data-aos-duration="2000">
-            <img src="./images/work2.jpg" alt="" />
-            <div class="overlay">
-              <div class="details">
-                <h3>Custom website build from scratch</h3>
-                <div class="btn-group">
-                  <a href=""><i class="fas fa-plus"></i></a>
-                  <a href=""><i class="fas fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="single" data-aos="fade-up" data-aos-duration="2000">
-            <img src="./images/work1.jpg" alt="" />
-            <div class="overlay">
-              <div class="details">
-                <h3>Custom website build from scratch</h3>
-                <div class="btn-group">
-                  <a href=""><i class="fas fa-plus"></i></a>
-                  <a href=""><i class="fas fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="single"data-aos="flip-right" data-aos-duration="2000">
-            <img src="./images/work2.jpg" alt="" />
-            <div class="overlay">
-              <div class="details">
-                <h3>Custom website build from scratch</h3>
-                <div class="btn-group">
-                  <a href=""><i class="fas fa-plus"></i></a>
-                  <a href=""><i class="fas fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="single" data-aos="flip-up" data-aos-duration="2000">
-            <img src="./images/work1.jpg" alt="" />
-            <div class="overlay">
-              <div class="details">
-                <h3>Custom website build from scratch</h3>
-                <div class="btn-group">
-                  <a href=""><i class="fas fa-plus"></i></a>
-                  <a href=""><i class="fas fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section testimonials" id="testimonial">
+   
+    <!-- gallery -->
+    <section class="section gallery" id="gallery">
       <div class="container">
         <div class="top">
-          <div class="subtitle">
-            <h3 class="title">Testimonial</h3>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitationUt enim ad minim
-              veniam, quis nostrud exercitation
-            </p>
-          </div>
-
-          <div class="glide" id="glide2">
-            <div class="glide__track" data-glide-el="track">
-              <ul  class="glide__slides">
-                <li class="glide__slide">
-                  <div class="testimonial">
-                    <span class="quote">&#8220;</span>
-                    <p>
-                      I enjoyed working with <span class="color">@onuohaoluebube</span>
-                      Ut enim ad minim veniam, quis nostrud exercitationUt enim ad minim
-                      veniam, quis nostrud exercitation
-                    </p>
-                     <div class="bottom">
-                       <div class="img-holder">
-                         <img src="./images/test1.jpg" alt="">
-                       </div>
-                       <div>
-                         <h4>Esieboma jn</h4>
-                         <span>Frontend Developer</span>
-                       </div>
-                     </div> 
-                  </div>
-                </li>
-
-                <li class="glide__slide">
-                  <div class="testimonial">
-                    <span class="quote">&#8220;</span>
-                    <p>
-                      I enjoyed working with <span class="color"> @onuohaoluebube</span>
-                      Ut enim ad minim veniam, quis nostrud exercitationUt enim ad minim
-                      veniam, quis nostrud exercitation
-                    </p>
-                     <div class="bottom">
-                       <div class="img-holder">
-                         <img src="./images/test2.jpg" alt="">
-                       </div>
-                       <div>
-                        <h4>Esieboma jn</h4>
-                        <span>Frontend Developer</span>
-                      </div>
-                     </div>
-                  </div>
-                </li>
-
-                <li class="glide__slide">
-                  <div class="testimonial">
-                    <span class="quote">&#8220;</span>
-                    <p>
-                      I enjoyed working with <span class="color">@onuohaoluebube</span>
-                      Ut enim ad minim veniam, quis nostrud exercitationUt enim ad minim
-                      veniam, quis nostrud exercitation
-                    </p>
-                     <div class="bottom">
-                       <div class="img-holder">
-                         <img src="./images/test3.jpg" alt="">
-                       </div>
-                       <div>
-                        <h4>Esieboma jn</h4>
-                        <span>Frontend Developer</span>
-                      </div>
-                     </div>
-                  </div>
-                </li>
-                </ul>
-                </div>
-
-                <!-- Arrows -->
-                <div class="glide__arrows" data-glide-el="controls">
-                   <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
-                   <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
-                </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog -->
-    <section class="section blog" id="blog">
-      <div class="container">
-        <div class="top">
-          <div class="subtitle">Learn with coderExpress</div>
-          <h2 class="title">My Blog</h2>
-          <p>exercitationUt enim ad minim
-            veniam, quis nostrud exercitationexercitationUt enim ad minim
-            veniam, quis nostrud exercitation</p>
+          <div class="subtitle">Explore My World</div>
+          <h2 class="title">My gallery</h2>
+          <p>I love keeping memories alive and pictures helps me with that.The series of images below is a bit summary of what I have been up to for the past few years. 
+But why is it so special to me? It is not just the pictures but the reasons behind them. I had opportunity to go so many beautiful places and make so many <span>MEMORIES!!!</span></p>
         </div>
 
-        <div class="glide" id="glide3">
+        <div class="glide" id="glide1">
           <div class="glide__track"  data-glide-el="track">
             <ul class="glide__slides">
               <li class="glide__slide">
                 <div class="single">
                   <div class="img-holder">
-                    <img src="./images/blog1.jpg" alt="">
+                    <img src="./images/img1.jpg" alt="Gallery Picture ">
                   </div>
-                  <div class="bottom">
-                    <span>09 MAR 2021 </span>
-                    <h3>How to make a word press website secure step by step</h3>
-                    <p>exercitationUt enim ad minim
-                      veniam, quis nostrud exercitationexercitationUt enim ad minim
-                      veniam, quis nostrud </p>
-                    <a href="">READ MORE</a>
+                </li>
+                <li class="glide__slide">
+                  <div class="single">
+                    <div class="img-holder">
+                      <img src="./images/img6.jpeg" alt="Gallery Picture ">
+                    </div>
+                    
                   </div>
+                </li>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img8.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+                
+               
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img2.jpeg" alt="Gallery Picture ">
+                  </div>
+                  
                 </div>
               </li>
               <li class="glide__slide">
                 <div class="single">
                   <div class="img-holder">
-                    <img src="./images/blog1.jpg" alt="">
+                    <img src="./images/img7.JPG" alt="Gallery Picture ">
                   </div>
-                  <div class="bottom">
-                    <span>09 MAR 2021 </span>
-                    <h3>How to make a word press website secure step by step</h3>
-                    <p>exercitationUt enim ad minim
-                      veniam, quis nostrud exercitationexercitationUt enim ad minim
-                      veniam, quis nostrud </p>
-                    <a href="">READ MORE</a>
-                  </div>
+                  
                 </div>
               </li>
               <li class="glide__slide">
                 <div class="single">
                   <div class="img-holder">
-                    <img src="./images/blog2.jpg" alt="">
+                    <img src="./images/img4.jpeg" alt="Gallery Picture ">
                   </div>
-                  <div class="bottom">
-                    <span>09 MAR 2021  </span>
-                    <h3>How to make a word press website secure step by step</h3>
-                    <p>exercitationUt enim ad minim
-                    veniam, quis nostrud exercitationexercitationUt enim ad minim
-                    veniam, quis nostrud </p>
-                    <a href="">READ MORE</a>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img5.jpg" alt="Gallery Picture ">
                   </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/uk.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img3.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/uk2.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img9.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img10.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img11.jpgss" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img12.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img13.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img14.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/sa2.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/sa5.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img15.jpg" alt="Gallery Picture ">
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="single">
+                  <div class="img-holder">
+                    <img src="./images/img16.jpg" alt="Gallery Picture ">
+                  </div>
+                  
                 </div>
               </li>
               </ul>
@@ -422,18 +398,20 @@
   <div class="contact-center container">
     <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
       <h2>Contact Me</h2>
-      <p>Send a messsage if you have work for me </p>
-      <p>Any information to pass across? send a message</p>
+      <p>Need a frontend developer? </p>
+      <p>Need me to be part of your development team? </p>
+      <p>Any information to pass across? </p>
+      <p>Send a message</p>
       <div class="bottom">
         <div>
           <span><i class="fas fa-map-marked-alt"></i></span>
           <h4>location</h4>
-          <small>Owerri Nigeria</small>
+          <small>Owerri, Nigeria</small>
         </div>
         <div>
-          <span><i class="fas fa-map-marked-alt"></i></span>
+          <span><i class="fas fa-envelope-open-text"></i></span>
           <h4>Email</h4>
-          <small>onuohaoluebube@gmail.com</small>
+          <small>onuohaoluebube05@gmail.com</small>
         </div> 
       </div>
     </div>
@@ -449,11 +427,21 @@
       </form>
     </div>
   </div>
+ <a href="#"><span><i class="fas fa-chevron-circle-up"></i></span></a> 
 </section>
 
 <!-- Footer -->
 <footer>
-  <p>&copy; Onuoha Oluebube 2021</br>Made with <span><i class="far fa-heart"></i></span> and <span><i class="fas fa-code"></i></span> <a href="#about">Ebube</a></p>
+  <div class="socialhandles">
+    <a href="https://www.linkedin.com/in/oluebube" target="_blank" rel="noopener noreferrer"><p><i class="fab fa-linkedin-in"></i></p></a>
+    <a href="https://facebook.com/sweetrosey.onuoha" target="_blank" rel="noopener noreferrer"><p><i class="fab fa-facebook-f"></i></p></a>
+    <p><i class="fab fa-instagram"></i></p>
+    <p><i class="fab fa-twitter"></i></p>
+    <a href="https://github.com/OnuohaOluebube" target="_blank" rel="noopener noreferrer"><p><i class="fab fa-github"></i></p></a>
+  </div>
+  <p>&copy; Onuoha Oluebube 2021</br>Made with <span><i class="far fa-heart"></i></span> and <span><i class="fas fa-code"></i></span>
+   
+    <a href="https://github.com/OnuohaOluebube" target="_blank" rel="noopener noreferrer">Ebube</a></p>
 </footer>
 
 <!-- Gsap -->
