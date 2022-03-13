@@ -1,13 +1,16 @@
 :root {
-  --primary: #e8728a;
-  /* --primary: #dc3545; */
-  --secondary: #688813;
-  --white: #fff;
+  --primary: #b38a56;
+  --secondary: #5b3509;
+  --shade1: #dccfb1;
   --black: rgba(0, 0, 0, 0.7);
-  --black2: #333;
-  --yellow: #e6af4b;
-  --blue: #e7f3ff;
+  --shade2: #311700;
+  --shade3:#b38a56;
+--white: #fff;
+  /* --image-grayscale: 0%;
+  --image-opacity: 100%; */
 }
+
+
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
 
@@ -32,7 +35,7 @@ textarea {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   color: var(--black);
-  background-color: var(--white);
+  background-color: var(--shade1);
   line-height: 1.6;
 }
 
@@ -50,6 +53,16 @@ a {
   text-decoration: none;
 }
 
+button{
+  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border-color: var(--primary);
+  font-weight: 600;
+ 
+  
+}
+
 li,
 ul {
   list-style: none;
@@ -57,10 +70,11 @@ ul {
 
 img {
   max-width: 100%;
+  filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
 
 ::selection {
-  background-color: var(--yellow);
+  background-color: var(--shade2);
 }
 
 .container {
@@ -82,17 +96,16 @@ img {
 
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
 }
 
 /* header */
 .header {
   position: relative;
-  background-color: var(--black);
-  height: calc(100vh - 2rem);
-
-  background: url("./images/bg011.jpg") center/cover no-repeat fixed;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  height: calc(100vh);
   z-index: 1000;
 }
 
@@ -140,7 +153,7 @@ img {
 .logo h2 {
   font-size: 3rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--shade1);
   font-style: italic;
 }
 
@@ -164,7 +177,7 @@ img {
 .nav-link:link,
 .nav-link:visited {
   padding: 1rem;
-  columns: var(--white);
+  columns: var(--shade1);
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -172,7 +185,7 @@ img {
 }
 
 .nav-link:hover {
-  color: var(--yellow);
+  color: var(--shade2);
 }
 
 @media only screen and (max-width: 996px) {
@@ -207,7 +220,7 @@ img {
   .hamburger {
     display: block;
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--shade1);
     cursor: pointer;
   }
 
@@ -243,50 +256,47 @@ img {
   font-size: 8rem;
   line-height: 1.2;
   font-weight: 800;
-  color: var(--white);
+  color: var(--shade1);
 }
 
 .hero h1 span {
-  color: var(--yellow);
+  color: var(--shade2);
 }
 
 .hero p {
-  color: var(--white);
+  color: var(--shade1);
   font-size: 2rem;
   margin-top: 3rem;
   width: 45%;
 }
 
 .hero .btn-group {
-  margin-top: 3rem;
-}
-
-.hero .btn-group .btn {
-  font-size: 2rem;
-  padding: 1rem 4rem;
-  font-weight: 600;
-  display: inline-block;
-  margin-right: 1rem;
   transition: all 300ms linear;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.hero .btn-group .btn:first-child {
-  background-color: var(--yellow);
-  color: var(--white);
+
+.hero button:first-child {
+  background-color: var(--shade2);
+  color: var(--shade1);
 }
 
-.hero .btn-group .btn:first-child:hover {
-  background-color: var(--primary);
+.hero button:first-child:hover {
+  background-color: var(--shade1);
+  color: var(--secondary);
 }
 
-.hero .btn-group .btn:last-child {
-  background-color: var(--white);
-  color: var(--primary);
+.hero button:last-child {
+  background-color: var(--shade1);
+  color: var(--secondary);
 }
 
-.hero .btn-group .btn:last-child:hover {
-  background-color: var(--primary);
-  color: var(--white);
+.hero button:last-child:hover {
+  background-color: var(--secondary);
+  color: var(--shade1);
 }
 
 @media only screen and (max-width: 998px) {
@@ -311,11 +321,11 @@ img {
 
 @media only screen and (max-width: 567px) {
   .hero h1 {
-    font-size: 6rem;
+    font-size: 5.2rem;
   }
   .hero p {
     width: 100%;
-    font-size: 1.9rem;
+  
   }
   .hero .btn-group .btn {
     font-size: 1.6rem;
@@ -331,6 +341,7 @@ img {
   margin-top: 5rem;
   padding: 8rem 0;
   overflow-x: hidden;
+  color: var(--secondary);
 }
 
 .about-center {
@@ -342,6 +353,8 @@ img {
 img {
   width: 100%;
   object-fit: cover;
+  
+  
 }
 
 .subtitle::before {
@@ -379,7 +392,8 @@ img {
   text-align: left;
 }
 span {
-  color: var(--primary);
+  color: var(--secondary);
+  /* font-weight: bold; */
 }
 
 .right img {
@@ -394,8 +408,16 @@ span {
 
 /* skills */
 .skills {
-  background-color: var(--blue);
+  background-color: var(--white);
 }
+
+.skills .subtitle::before  {
+  background-color: var(--shade3);
+}
+.skills .subtitle::after  {
+  background-color: var(--shade3);
+}
+
 
 .section .top {
   text-align: center;
@@ -406,6 +428,9 @@ span {
   width: 65%;
   margin: 0 auto;
 }
+.skills .title{
+  color: var(--shade3);
+}
 .skillscontainer {
   display: grid;
 
@@ -415,7 +440,7 @@ span {
 
 .skill {
   position: relative;
-  background-color: var(--white);
+  background-color: var(--shade1);
   text-align: center;
   padding: 3rem;
   height: 23rem;
@@ -424,14 +449,14 @@ span {
 }
 .skill span {
   font-size: 3rem;
-  color: var(--yellow);
+  color: var(--shade2);
 }
 
 .skill h3 {
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--black2);
+  color: var(--shade2);
   margin: 1rem 0 0.5rem 0;
   transition: all 300ms ease-out;
 }
@@ -443,7 +468,7 @@ span {
 
 .skill:hover > h3,
 .skill:hover > p {
-  color: var(--white);
+  color: var(--shade1);
 }
 
 .skill::before {
@@ -492,95 +517,66 @@ span {
 /* portfolio */
 
 .portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 2rem 3rem;
   width: 100%;
-  margin-top: 7rem;
+
+  
 }
+
 
 .portfolio-container .single {
-  position: relative;
-  flex: 30%;
-  margin: auto;
-  height: 24rem;
   width: 100%;
-  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 5rem;
+  border-bottom: #5b3509 1px dotted;
+  padding: 5rem 0 ;
+
 }
 
-.portfolio-container .single img {
+.portfolio-container img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-.portfolio-container .overlay {
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  overflow: hidden;
-  transition: all 500ms ease-out;
+.portfolio-container button{
+  margin-top: 2rem;
+  border-color: var(--secondary);
+  color: var(--shade2);
+  padding: 1rem 2rem;
+
 }
 
-.portfolio-container .single:hover .overlay {
-  height: 100%;
+.portfolio-container button:hover{
+ padding: 1.2rem 2.4rem;
+
 }
 
-.portfolio-container .overlay .details {
-  color: var(--yellow);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
-}
 
-.portfolio-container .overlay .details h3 {
-  font-weight: 700;
-  font-size: 1.9rem;
-  margin-bottom: 2rem;
-}
 
-.portfolio-container .overlay .btn-group {
-  color: var(--white);
-}
-
-.portfolio-container .overlay .btn-group a {
-  background-color: rgba(0, 0, 0, 0.8);
-  font-size: 1.8rem;
-  display: inline-block;
-  padding: 0.6rem, 1.3rem;
-}
-
-@media only screen and (max-width: 996px) {
-  .portfolio-container .single {
-    flex: 40%;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .portfolio-container .single {
-    flex: 100%;
-    max-width: 40rem;
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .portfolio-container {
-    gap: 0 3rem;
+    grid-template-columns: 1fr;
+    padding: 3rem 0 ;
+    gap: 1rem;
   }
 }
 
 /* Gallery */
 .gallery {
-  background-color: var(--blue);
+  background-color: var(--white);
+}
+
+/* Gallery */
+.gallery .subtitle::before  {
+  background-color: var(--shade3);
+}
+.gallery .subtitle::after  {
+  background-color: var(--shade3);
+}
+.gallery .title{
+  color: var(--shade3);
 }
 
 .gallery .single {
@@ -670,7 +666,7 @@ span {
 }
 
 .contact-center .right .form {
-  border: 1px solid var(--yellow);
+  border: 1px solid var(--shade2);
   padding: 3rem;
 }
 
@@ -682,7 +678,7 @@ span {
 }
 
 .contact-center .right .form input {
-  border: 1px solid var(--yellow);
+  border: 1px solid var(--shade2);
   border-radius: 0.5rem;
   text-indent: 1rem;
   padding: 1rem 2rem 1rem 0;
@@ -691,7 +687,7 @@ span {
 .contact-center .right .form textarea {
   display: block;
   width: 100%;
-  border-radius: 1px solid var(--yellow);
+  border-radius: 1px solid var(--shade2);
   border-radius: 0.5rem;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -703,7 +699,7 @@ span {
   display: inline-block;
   padding: 1.3rem 3rem;
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--shade1);
 }
 
 @media only screen and (max-width: 996px) {
@@ -740,7 +736,7 @@ span {
 footer {
   background-color: var(--primary);
   padding: 2rem;
-  color: var(--white);
+  color: var(--shade1);
   text-align: center;
 }
 .socialhandles {
@@ -758,14 +754,14 @@ footer {
   margin: 1rem;
 
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--white);
+  color: var(--shade1);
 }
 
 .fa-heart {
   color: var(--secondary);
 }
 .fa-code {
-  color: var(--yellow);
+  color: var(--shade2);
 }
 footer a {
   text-decoration: underline;

@@ -30,9 +30,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css"
   /> 
- <!-- CUstom script -->
-    <link rel="stylesheet" href="./style.css" />
-    <title>Ebube - portfolio</title>
+ <!-- Custom script -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/darktheme.css" />
+    <title>Oluebube Onuoha: Frontend developer</title>
   </head>
   <body>
     <header class="header" id="header">
@@ -41,7 +42,7 @@
         <nav class="nav d-flex container">
           <div class="nav-header d-flex">
             <div class="logo">
-              <h2>EB<span>U</span>BE</h2>
+              <h2>EBUBE</h2>
             </div>
 
             <div class="hamburger">
@@ -63,14 +64,14 @@
                 <li class="nav-item">
                   <a href="#portfolio" class="nav-link scroll-link">Projects</a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a href="#testimonial" class="nav-link scroll-link">Testimonial</a>
-                </li> -->
                 <li class="nav-item">
                   <a href="#gallery" class="nav-link scroll-link">gallery </a>
                 </li>
                 <li class="nav-item">
                   <a href="#contact" class="nav-link scroll-link">Contact </a>
+                </li>
+                <li class="theme-switch">
+                  <input type="checkbox" />
                 </li>
               </ul>
           </div>
@@ -87,9 +88,15 @@
          A frontend developer, i build eye catching user interface using modern web technologies with focus on accessibility and responsiveness.
         </p>
         <div class="btn-group">
-          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn1">VIEW RESUME</a>
+          <button>
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn1">VIEW RESUME</a>
+          </button>
+         <button>
           <a href="#contact" class="btn btn2">CONTACT ME</a>
+         </button>
+         
         </div>
+        <p>Scroll<i class="fa fa-arrow-down" aria-hidden="true"></i></p>
       </div>
     </header>
 
@@ -99,17 +106,18 @@
     >
       <div class="about-center container">
         <div class="left" data-aos="fade-right" data-aos-duration="2000">
-          <div class="subtitle">Welcome to My World!</div>
+          <div class="subtitle">Welcome to My World!
+          </div>
           <h2 class="title">About Ebube</h2>
           <p>
             
             I am a self-taught frontend developer who loves to build aesthetically pleasing websites using modern web technologies. 
             I ensure my work is accessible to everyone and useable on all screen sizes.
-            I am exploring the field of cloud computing and the various technologies offered by it, i ensure to put my work in the cloud.
+            I am exploring the field of cloud computing and the various technologies offered by it, I ensure to put my work in the cloud.
         
           </p>
           <p class="top">
-            Outside coding, i spend quality time reading health related books. </br><span>I also enjoy cooking alot</span> 
+            Outside coding, i spend quality time reading health related books. </br><span><i>I also enjoy cooking alo</i>t</span> 
 
           </p> 
         </div>
@@ -127,7 +135,7 @@
           <div class="subtitle">Areas of Specialization</div>
           <h2 class="title">My skills</h2>
           <p>
-            Am quite pasionate about technology. Below are some of the things i specialise and have interest in. 
+            I am quite pasionate about technology. Below are some of the things i specialise and have interest in. 
           </p>
         </div>
 
@@ -172,38 +180,64 @@
           <h2 class="title">My Projects</h2>
           <p>Here are some of my recent projects. Built with JavaScript, React, CSS and HTML and are all hosted in the cloud.</p>
         </div>
+<div class="portfolio-container">
 
-        <div class="portfolio-container">
-          <div class="single" data-aos="fade-down" data-aos-duration="2000">
-            <img  src="./images/foody.JPG" alt="Foody Project Snapshot" />
-            <div class="overlay">
-              <div class="details">
-                <h3>Foody is an e-commerce website, it took my weeks to complete because i  worked on it alone. </h3>
+<div class=" single ">
+  <div class="right" data-aos="fade-right" data-aos-duration="2000">
+    <img  src="./images/foody.JPG" alt="Foody Project Snapshot" />
+    </div>
+  <div>
+    <h3>
+      Foody
+    </h3>
+    <p>Foody is a personal project. I built it to help curb the problem of agricultural product wastage in Nigeria by serving as a link between farmers and consumers</p> </p>
+        
+    <button>
+    Visit Site
+    </button>
+  </div> 
+</div>
+           
+         <div class="single ">
+            <div>
+              <h3>
+                Africana
+              </h3>
+              <p>I worked on Africana with 4 other young girls (team of 5) for a hackathon. The platform gives web developrs access to high quality African based images</p>
+              
+              <button>
                 
-                <div class="btn-group">
-                
-                  <a href=""><i class="fas fa-link"></i></a>
-                </div>
-              </div>
-            </div>
+               Visit Site
+            </button> 
+           </div>
+           <div class="right" data-aos="fade-left" data-aos-duration="2000">
+            <img src="./images/africana.png" alt="Portfolio website Snapshot" />
           </div>
+        </div>
 
-          <div class="single" data-aos="fade-right" data-aos-duration="2000">
-            <img src="./images/portfolio.JPG" alt="Portfolio website Snapshot" />
-            <div class="overlay">
-              <div class="details">
-                <h3>My personal portfolio website, showing my work and you can contact me for works via the contact section below.</h3>
-                <div class="btn-group">
-                  <!-- <a href=""><i class="fas fa-plus"></i></a> -->
-                  <a href=""><i class="fas fa-link"></i></a>
-                </div>
-              </div>
+        <div class=" single ">
+          <div class="right" data-aos="fade-right" data-aos-duration="2000">
+            <img  src="./images/portfolio.png" alt="Foody Project Snapshot" />
             </div>
-          </div>
-         
+          <div>
+            <p>
+              Portfolio website
+            </p>
+            <p>My portfolio website</p>
+                
+            <button>
+           Visit Site
+            </button>
+          </div> 
         </div>
       </div>
+
+      
+</div>
     </section>
+
+
+  
 
    
     <!-- gallery -->
@@ -308,18 +342,11 @@ But why is it so special to me? It is not just the pictures but the reasons behi
                   
                 </div>
               </li>
+           
               <li class="glide__slide">
                 <div class="single">
                   <div class="img-holder">
-                    <img src="./images/img10.jpg" alt="Gallery Picture ">
-                  </div>
-                  
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="single">
-                  <div class="img-holder">
-                    <img src="./images/img11.jpgss" alt="Gallery Picture ">
+                    <img src="./images/img11.jpg" alt="Gallery Picture ">
                   </div>
                   
                 </div>
@@ -348,14 +375,7 @@ But why is it so special to me? It is not just the pictures but the reasons behi
                   
                 </div>
               </li>
-              <li class="glide__slide">
-                <div class="single">
-                  <div class="img-holder">
-                    <img src="./images/sa2.jpg" alt="Gallery Picture ">
-                  </div>
-                  
-                </div>
-              </li>
+         
               <li class="glide__slide">
                 <div class="single">
                   <div class="img-holder">
@@ -454,5 +474,6 @@ But why is it so special to me? It is not just the pictures but the reasons behi
     <!-- Custom Script -->
     <script src="./js/index.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/theme.js"></script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\..\\foody"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.port": 5501,
+    "git.ignoreLimitWarning": true
+  }
+}

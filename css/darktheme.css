@@ -1,0 +1,11 @@
+[data-theme="dark"] {
+  --primary: #311700;
+  --secondary: fff;
+  --shade1: #b38a56;
+  --shade2: #dccfb1;
+  --shade3: #dccfb1;
+  --white: #311700;
+  --black: #fff;
+  /* --image-grayscale: 100%;
+  --image-opacity: 100%; */
+  }
