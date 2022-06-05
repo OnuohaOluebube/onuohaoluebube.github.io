@@ -329,12 +329,15 @@ img {
   
   }
   .hero .btn-group .btn {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .hero .btn-group .btn:first-child {
     margin-bottom: 1rem;
   }
+
+  button{
+    padding: .5rem 2rem;
 }
 
 /* Section */
