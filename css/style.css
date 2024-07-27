@@ -282,8 +282,8 @@ button {
 }
 
 .hero button:first-child:hover {
-  background-color: var(--shade1);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--shade1);
 }
 
 .hero button:last-child {
@@ -392,10 +392,6 @@ img {
 span {
   color: var(--secondary);
   /* font-weight: bold; */
-}
-
-.right img {
-  height: 50rem;
 }
 
 @media only screen and (max-width: 998px) {
