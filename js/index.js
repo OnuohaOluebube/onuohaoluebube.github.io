@@ -3,6 +3,7 @@
 const openNav = document.querySelector(".hamburger");
 const navContainer = document.querySelector(".nav-menu");
 const navList = document.querySelector(".nav-list");
+const homeLink = document.querySelector(".home-link")
 
 // open and close navbar
 openNav.addEventListener("click", () => {
@@ -14,6 +15,9 @@ openNav.addEventListener("click", () => {
     navContainer.style.height = "0px";
   }
 });
+homeLink.addEventListener("click", () => {
+  navContainer.style.height = "0px";
+})
 
 // Fix Navbar
 
@@ -38,8 +42,10 @@ links.forEach((link) => {
     // prevent Default
     e.preventDefault();
     // Scroll
+    navContainer.style.height = "0px";
     const id = e.currentTarget.getAttribute("href").slice(1);
     const el = document.getElementById(id);
+
 
     const navHeight = navBar.getBoundingClientRect().height;
     const containerHeight = linksContainer.getBoundingClientRect().height;
